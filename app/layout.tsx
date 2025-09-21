@@ -68,6 +68,9 @@ export default function RootLayout({
                <Suspense fallback={<div>Loading...</div>}>
                  <ThemeProvider defaultTheme="dark">{children}</ThemeProvider>
                </Suspense>
+               <footer style={{ position: "fixed", bottom: 0, width: "100%", textAlign: "center", opacity: 0.5, fontSize: "0.9rem", zIndex: 1000 }}>
+                 made by Drumil Patel
+               </footer>
              </body>
     </html>
   )
